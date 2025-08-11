@@ -27,13 +27,37 @@ body {
 
 /* Minimal Navigation Tabs */
 .minimal-nav {
-    padding: 20px 0 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 0;
     background-color: #fff;
 }
 
 .nav-tabs {
     display: flex;
     gap: 25px;
+}
+
+/* Top Social Icons */
+.top-social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.top-icon {
+    color: #666;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.top-icon:hover {
+    color: #667eea;
+    transform: translateY(-1px);
 }
 
 .tab-link {
@@ -454,11 +478,22 @@ footer {
     }
 
     .minimal-nav {
-        padding: 15px 0 0 20px;
+        padding: 15px 20px 0;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
     }
 
     .nav-tabs {
         gap: 20px;
+    }
+
+    .top-social-icons {
+        gap: 12px;
+    }
+
+    .top-icon {
+        font-size: 1rem;
     }
 
     .hero-content h1 {
@@ -516,11 +551,15 @@ footer {
     }
 
     .minimal-nav {
-        padding: 10px 0 0 15px;
+        padding: 10px 15px 0;
     }
 
     .tab-link {
         font-size: 0.85rem;
+    }
+
+    .top-icon {
+        font-size: 0.95rem;
     }
 
     .hero {
